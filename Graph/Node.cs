@@ -1,5 +1,10 @@
-﻿namespace GraphTest
+﻿using System.Diagnostics;
+
+namespace GraphTest
 {
+#if DEBUG
+    [DebuggerDisplay("node {_name}")]
+#endif
     public class Node
     {
         private readonly string _name;

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using GraphTest;
 using Xunit;
@@ -133,6 +134,35 @@ namespace GraphTests
 
             result = Walker.CreatePath(node2, node6);
             CheckResult(node2, node6, result);
+        }
+
+        [Fact]
+        public void Test6()
+        {
+            var node1Neighbors = new Node[2];
+            var node1 = new Node("N1", node1Neighbors);
+
+            var node2Neighbors = new Node[2];
+            var node2 = new Node("N2", node2Neighbors);
+
+            var node3Neighbors = new Node[3];
+            var node3 = new Node("N3", node3Neighbors);
+            
+            var node33 = new Node("N33", Array.Empty<Node>());
+
+            node1Neighbors[0] = node2;
+            node1Neighbors[1] = node3;
+
+            node2Neighbors[0] = node1;
+            node2Neighbors[1] = node3;
+
+            node3Neighbors[0] = node1;
+            node3Neighbors[1] = node2;
+            node3Neighbors[2] = node33;
+            
+
+            var result = Walker.CreatePath(node1, node33);
+            CheckResult(node1, node33, result);
         }
 
         private static void CheckResult(Node from, Node to, List<Node> result)
