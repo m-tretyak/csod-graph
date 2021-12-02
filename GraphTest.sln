@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph", "Graph\Graph.csproj", "{AF75FA08-29A8-4B34-842F-6280320112BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{7B359217-8C5B-433F-9368-4C65AE708C31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF75FA08-29A8-4B34-842F-6280320112BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF75FA08-29A8-4B34-842F-6280320112BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF75FA08-29A8-4B34-842F-6280320112BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF75FA08-29A8-4B34-842F-6280320112BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B359217-8C5B-433F-9368-4C65AE708C31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B359217-8C5B-433F-9368-4C65AE708C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B359217-8C5B-433F-9368-4C65AE708C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B359217-8C5B-433F-9368-4C65AE708C31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
